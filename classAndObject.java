@@ -28,7 +28,8 @@ public class classAndObject {
 		
 		p1.saysHi();
 		p2.saysHi();
-		swap1(p1,p2);
+//		swap2(p1,p2);
+		swap3(p1,p2);
 		p1.saysHi();
 		p2.saysHi();
 
@@ -41,6 +42,34 @@ public class classAndObject {
 		
 		
 	}
+	
+	public static void swap2(person psn1,person psn2){
+		int age=psn1.age;
+		psn1.age=psn2.age;
+		psn2.age=age;
+		
+		String name=psn1.name;
+		psn1.name=psn2.name;
+		psn2.name=name;
+		
+		
+	}
+	
+	public static void swap3(person psn1,person psn2) {
+		psn1=new person();
+		int age=psn1.age;
+		psn1.age=psn2.age;
+		psn2.age=age;
+		
+		psn2=new person();
+		
+		String name =psn1.name;
+		psn1.name=psn2.name;
+		psn2.name=name;
+		
+	}
+	
+	
 	
 	
 
